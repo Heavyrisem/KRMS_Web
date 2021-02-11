@@ -1,0 +1,8 @@
+footer {
+    display: flex;
+    padding: 4% 3%;
+}
+footer span {
+    margin: auto;
+    color: rgb(110, 110, 110);
+}

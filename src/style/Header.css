@@ -1,0 +1,93 @@
+.Header {
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+
+    background-color: #161616;
+    color: white;
+}
+
+.PageIcon {
+    height: 3rem;
+}
+
+.PageTitle {
+    padding: 0 .5rem;
+    height: 3rem;
+    box-sizing: border-box;
+
+    font-weight: bold;
+
+    display: table;
+
+    transition: all 0.1s;
+    cursor: pointer;
+
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.PageTitle:hover {
+    background-color: #262626;
+}
+
+.UserAccountWarp {
+    display: block !important;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    padding: 0 1.5rem;
+}
+.UserAccount {
+    height: 3rem;
+    box-sizing: border-box;
+
+    display: table;
+    transition: all 0.1s;
+    cursor: pointer;
+
+
+    font-weight: bold;
+}
+.UserAccount:hover {
+    background-color: #262626;
+}
+.UserAccount:hover .UserAccountDropDown {
+    display: block;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.UserAccountDropDown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #262626;
+    transform: translateX(-1.5rem);
+}
+.UserAccountDropDown span {
+    display: block;
+    padding: .5rem 1.5rem;
+}
+.UserAccountDropDown span:hover {
+    background-color: #3a3a3a;
+}
+
+@media (max-width: 1200px) {
+    .PageTitle .middle:after {
+        content: "Monitor System";
+        display: block;
+    }
+    .PageTitle .middle span {
+        display: none;
+    }
+
+    .UserAccount {
+        margin-right: 0;
+    }
+}

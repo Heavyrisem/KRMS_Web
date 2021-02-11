@@ -1,0 +1,86 @@
+.Setting {
+    text-align: center;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    width: 45%;
+    box-sizing: border-box;
+
+    background-color: white;
+    box-shadow: 0 1px 50px rgba(32, 33, 36, 0.28);
+    border-radius: 1.5rem;
+
+    padding: 1%;
+}
+
+.SettingHeader {
+    display: flex;
+}
+
+.SettingTitle {
+    font-size: 1.1rem;
+}
+.SettingClose {
+    margin: auto 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.SettingBody {
+    padding: 1rem .5rem;
+}
+
+.SettingField {
+    display: flex;
+    margin-bottom: .5rem;
+
+    flex-wrap: wrap;
+}
+.SettingFieldTitle {
+    font-size: .9rem;
+    width: 100%;
+    text-align: left;
+}
+.SettingField input {
+    width: 75%;
+
+    padding: .5rem;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: .3rem;
+    background-color: rgb(236, 236, 236);
+}
+
+.SettingField button {
+    width: 20%;
+    margin-left: 5%;
+
+    
+    text-align: center;
+    background-color: rgb(171, 45, 255);
+    color: white;
+    border-radius: .5rem;
+    border: none;
+
+    transition: background-color 0.2s;
+}
+.SettingField Button:hover {
+    background-color: white;
+    border: solid 1px rgb(171, 45, 255);
+    color: rgb(171, 45, 255);
+}
+
+.SettingWarning {
+    font-size: .9rem;
+}
+
+@media (max-width: 1200px) {
+    .Setting {
+        width: 96%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+}

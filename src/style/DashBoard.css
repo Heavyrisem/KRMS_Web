@@ -1,0 +1,29 @@
+.DashBoard {
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+}
+
+.DashComps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.DashTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.SettingBtn {
+}
+
+@media (max-width: 1200px) {
+    .DashComps {
+        width: auto;
+    }
+    .DashTitle {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
