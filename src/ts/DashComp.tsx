@@ -2,12 +2,11 @@ import React from 'react';
 import * as Chartjs from 'chart.js';
 import * as Chart from 'react-chartjs-2';
 
-import { DBServer, Drive } from '../../../Types';
+import { DBServer, Drive } from '../../Types';
 
 import '../style/DashComp.css';
 import {ByteCal} from './Unitchanger';
 import { User } from './Master';
-import { Server } from 'http';
 Chartjs.defaults.global.animation = {
     duration: 1000,
     easing: "easeInBack"
