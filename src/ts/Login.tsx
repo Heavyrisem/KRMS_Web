@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 import '../style/Login.css';
 
-import { LoginNet } from '../../../Types';
+import { LoginNet } from '../../Types';
 dotenv.config();
 
 
