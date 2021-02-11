@@ -38,11 +38,11 @@ class Master extends React.Component<Props, States> {
 
     async componentDidMount() {
         // CheckCookie For Login
-        console.log(process.env);
+        // console.log(process.env);
         if (cookie.load("User") && process.env["REACT_APP_KRMS_CRYPTO_KEY"]) {
             let User: User = JSON.parse(crypto.AES.decrypt(cookie.load("User"), process.env["REACT_APP_KRMS_CRYPTO_KEY"]).toString(crypto.enc.Utf8));
             if (User.name && User.token) {
-                console.log(User);
+                // console.log(User);
                 this.LoginSuccess(User.name, User.token);
             }
         }
