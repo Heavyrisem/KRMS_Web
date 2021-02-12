@@ -23,7 +23,7 @@ export class Login extends React.Component<LoginProps, LoginState> {
     async requestLogin() {
         if (!(this.InputID && this.InputPW && this.InputRememberUser)) return;
 
-        let ServerRequest = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/Login`, {
+        let ServerRequest = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/Login`, {
             method: "POST",
             body: JSON.stringify({name: this.InputID.value, passwd: this.InputPW.value}),
             headers: {"content-type": "application/json"}
@@ -44,7 +44,7 @@ export class Login extends React.Component<LoginProps, LoginState> {
         if (!(this.InputID && this.InputPW && this.InputRememberUser)) return;
 
         
-        let ServerRequest = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/Register`, {
+        let ServerRequest = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/Register`, {
             method: "POST",
             body: JSON.stringify({name: this.InputID.value, passwd: this.InputPW.value}),
             headers: {"content-type": "application/json"}

@@ -27,7 +27,7 @@ export class Setting extends React.Component<SettingProps, SettingStates> {
     async RenameServer() {
         if (!this.RenameInput || !this.RenameInput.value) return this.setState({WarningMessage: "입력값이 비었습니다."});
 
-        let ServerResponse: Response = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/RenameServer`, {
+        let ServerResponse: Response = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/RenameServer`, {
             method: "POST",
             body: JSON.stringify({
                 token: this.props.User.token,

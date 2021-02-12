@@ -37,7 +37,7 @@ class DashBoard extends React.Component<Props, States> {
 
     async GetAllServerStatus() {
         if (!(this.props.User)) return;
-        let GetServersRequest = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/GetServers`, {
+        let GetServersRequest = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/GetServers`, {
             method: "POST",
             body: JSON.stringify({token: this.props.User&& this.props.User.token}),
             headers: {"content-type": "application/json"}
@@ -57,7 +57,7 @@ class DashBoard extends React.Component<Props, States> {
         console.log("GetServer")
         if (this.state.GetSelectedServer) clearTimeout(this.state.GetSelectedServer);
         if (!(this.props.User && this.state.SelectedServer)) return;
-        let GetServerRequest = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/GetServer`, {
+        let GetServerRequest = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/GetServer`, {
             method: "POST",
             body: JSON.stringify({macaddr: this.state.SelectedServer.macaddr}),
             headers: {"content-type": "application/json"}

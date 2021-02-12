@@ -206,7 +206,7 @@ export class RemoveServer extends React.Component<RemoveProps, RemoveStates> {
     }
 
     async Remove() {
-        let ServerResponse = await fetch(`http://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/RemoveServer`, {
+        let ServerResponse = await fetch(`https://${process.env["REACT_APP_KRMS_SERVER_ADDRESS"]}/RemoveServer`, {
             method: "POST",
             body: JSON.stringify({ token: this.props.User.token, macaddr: this.props.Server?.macaddr }),
             headers: {"content-type": "application/json"}
