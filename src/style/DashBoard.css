@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 1200px) {
+    .DashBoard {
+        padding: 1.5rem 1rem;
+    }
     .DashComps {
         width: auto;
     }
