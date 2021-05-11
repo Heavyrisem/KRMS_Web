@@ -11,3 +11,7 @@ KRMS는 서버 자원의 사용률과, 서버가 다운되었는지 확인할 �
 프론트엔드, 백엔드 모두 개발해야 해서 JavaScript로 선택했습니다.
 
 프론트엔드는 React.js 라이브러리를 사용했습니다.
+
+## KRMS GUEST ACCOUNT
+ID : krmsguest
+PW : 123 (2번 반복)
