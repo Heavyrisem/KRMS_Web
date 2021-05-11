@@ -13,5 +13,10 @@ KRMS는 서버 자원의 사용률과, 서버가 다운되었는지 확인할 �
 프론트엔드는 React.js 라이브러리를 사용했습니다.
 
 ## KRMS GUEST ACCOUNT
+실제로 Google Compute Engine에서 작동중인 서버의 상태를 확인 할 수 있습니다.
+
+Server's Name : GoogleCloud
+
 ID : krmsguest
+
 PW : 123 (2번 반복)
